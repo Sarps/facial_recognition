@@ -4,7 +4,7 @@ var video = document.querySelector('#camera-stream'),
     controls = document.querySelector('.controls'),
     take_photo_btn = document.querySelector('#take-photo'),
     delete_photo_btn = document.querySelector('#delete-photo'),
-	error_message = document.querySelector('#error-message');
+	  error_message = document.querySelector('#error-message');
     loader = document.querySelector('#loader');
     
 navigator.getMedia = ( navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
