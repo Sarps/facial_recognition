@@ -18,7 +18,7 @@ var upload = multer({ dest: "uploads/" });
 server.post("/idcard", upload.single("idcard"), function(req, res, next) {
   var types = ["labels", "faces", "text"];
   vision.detect(req.file.path, types, function(err, detections, apiResponse) {
-    if (err) return res.err(`Cloud Vision Error: ${err}`);
+    if (err) return res.send(`Cloud Vision Error: ${err}`);
     res.json({
       detections: detections,
       image: req.file.path //base64Image(req.file.path)
