@@ -9,7 +9,7 @@ var vision = gcloud.vision();
 
 //setup express server and body-parser middleware
 const server = express();
-server.use(express.static("static"));
+server.use(express.static("public"));
 server.use("/uploads", express.static("uploads"));
 
 var upload = multer({ dest: "uploads/" });
