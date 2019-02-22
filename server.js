@@ -2,8 +2,8 @@ const fs = require("fs");
 const express = require("express");
 var multer = require("multer");
 var gcloud = require("gcloud")({
-  keyFilename: "./static/EnhancedVA-0bd76c2718ba.json",
-  projectId: "eva-rluslp"
+  keyFilename: "removed content",
+  projectId: "google cloud project"
 });
 var vision = gcloud.vision();
 
